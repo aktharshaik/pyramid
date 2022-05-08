@@ -1,2 +1,2 @@
 # testcode
-Build a Pyramid of * for given number of lines
+pyramid.html ==> Build a Pyramid of * for given number of lines
