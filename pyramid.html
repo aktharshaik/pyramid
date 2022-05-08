@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8>
+    <title> Pyramid </title>
+</head>
+    <body>
+        Number of Lines of Pyramid: <input id="lines" type="text" name="line" />
+        <input type="button" onClick="createPyramid()" value="Create" />
+    </body>
+</html>
+<script>
+    function createPyramid() {
+        l = document.getElementById("lines").value; 
+        document.write("Function Invoked");
+        document.write("<br>" + l);
+        
+        console.log("For...Loop");
+        l++;
+        document.write("<br>");
+        for(i=1;i<l;i++)
+        {
+            c = "";
+            for(x=1;x<(l-i);x++)
+            {
+                document.write('&nbsp;');
+                c+=" ";
+            }
+            for(x=1;x<i;x++)
+            {
+                document.write("*");
+                c+="*";
+            }
+            document.write("*");
+            c+="*";
+            for(x=1;x<i;x++)
+            {
+                document.write("*");
+                c+="*";
+            }
+                console.log(c);
+                document.write("<br>");
+        }
+    }
+</script>
