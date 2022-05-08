@@ -14,7 +14,12 @@
         l = document.getElementById("lines").value; 
         document.write("Function Invoked");
         document.write("<br>" + l);
-        
+        if(isNaN(l))
+        {
+            document.write("<br>" + "Enter Numeric Value");
+            return;
+        }
+        l = parseInt(l);
         console.log("For...Loop");
         l++;
         document.write("<br>");
